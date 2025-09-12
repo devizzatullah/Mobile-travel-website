@@ -6,3 +6,20 @@
     --brand-500-colour: ##44D5CD;
     --orange-colour: ##EE8F39
 }
+
+*,
+*::after
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Urbanist"
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
