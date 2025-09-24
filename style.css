@@ -1,10 +1,11 @@
 :root{
-    --white-colour: ##FFFFFF;
-    --neutral-colour: ##262626;
-    --neutral-100-colour: ##F2F2F2;
-    --brand-600-colour: ##25A59E;
-    --brand-500-colour: ##44D5CD;
-    --orange-colour: ##EE8F39
+    --white-color: #FFFFFF;
+    --neutral-color: #262626;
+    --neutral-100-color: #F2F2F2;
+    --brand-600-color: #25A59E;
+    --brand-500-color: #44D5CD;
+    --orange-color: #EE8F39;
+    --blur-color: #2C1D3C;
 }
 
 *,
@@ -15,11 +16,144 @@
 
 body{
     margin: 0;
-    font-family: "Urbanist"
+    font-family: Gilda display;
+}
+
+.wrapper{
+  max-width: 375px; 
+  margin: 0 auto; 
 }
 
 
-.nav{
-    display: flex;
+/* Buttons */
+
+.btn{
+    padding: 17px 3px;
+    border-radius: 1.5px;
+    color: #262626
+    display: center alignment
+
+}
+
+.btn.arrow{ 
+    padding: 16px 32px;
+    border-radius: 0.2px;
+    color: #25A59E;
+    Gap: 12px;
+    font-family: Gilda display;
+    font-style: semibold;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.btn.app-buttons{
+    padding: 16px 32px;
+    border-radius: 100px;
+    color: #25A59E;
+    display: inline block;
+    Gap: 12px;
     justify-content: space-between;
+}
+
+.btn.click-here{
+    padding: 16px 32px;
+    border-radius: 0.2px;
+    text-decoration: none;
+    font-family: Urbanist;
+    font-style: semibold;
+    font-weight: 600;
+    font-size: 18px;
+    gap: 10px;
+    background-color: #25A59E;
+    
+}
+
+
+/* Header */
+
+header{
+    height: 323px;
+    width: 375px;
+    top: -3px;
+}
+
+nav{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 375px;
+    height: 60px;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    z-index: 100;
+}    
+        
+
+
+nav.logo{
+    font-family: Gilda display;
+    font-weight: 400;
+    font-size: 16px;
+    color: #25A59E;
+    width: 52px;
+    height: 19px;
+    border: 0.7px;
+}
+
+nav img{
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+
+/*Travel around the world section*/
+
+.travel-around-the-world-section{
+    width: 375px;
+    height: 323px;
+    align-items: center;
+    padding-right: 24px;
+    padding-left: 24px;
+    top: 150px;
+    display: flex;
+}
+
+.travel-around-the-world h1{
+    font-family: Gilda display; 
+    font-weight: 400;
+    font-size: 52px;
+    color: #262626;
+    margin: 0;
+    align-items: center;
+    width: 327px;
+    height: 122px;
+    align-items: center;
+}
+
+>.travel-around-the-world h1 Travel{
+    font-family: Gilda display; 
+    font-weight: 400;
+    font-size: 52px;
+    color: #25A59E;
+    margin: 0;
+    align-items: center;
+    width: 327px;
+    height: 122px;
+    
+}
+
+.travel-around-the-world img{
+    width: 432.6px;
+    height: 228px;
+    padding-top: 24px;
+    padding-left: 16.8px;
+    background: #2C1D3C #EE8F39;
+    
+}
+
+.travel-around-the-world img background{
+
 }
