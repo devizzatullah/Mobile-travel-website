@@ -4,24 +4,22 @@
     --neutral-100-color: #F2F2F2;
     --brand-600-color: #25A59E;
     --brand-500-color: #44D5CD;
-    --orange-color: #EE8F39;
-    --blur-color: #2C1D3C;
-}
+    }
 
 *,
 *::after
-*::before{
+*::before {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     font-family: Gilda display;
 }
 
-.wrapper{
-  max-width: 375px; 
-  margin: 0 auto; 
+.wrapper {
+    max-width: 375px; 
+    margin: 0 auto; 
 }
 
 
@@ -30,12 +28,11 @@ body{
 .btn{
     padding: 17px 3px;
     border-radius: 1.5px;
-    color: #262626
-    display: center alignment
+    color: #262626;
 
 }
 
-.btn.arrow{ 
+.btn-arrow { 
     padding: 16px 32px;
     border-radius: 0.2px;
     color: #25A59E;
@@ -46,54 +43,53 @@ body{
     font-size: 15px;
 }
 
-.btn.app-buttons{
-    padding: 16px 32px;
-    border-radius: 100px;
+.app-btn {
+    padding: 0;
     color: #25A59E;
-    display: inline block;
-    Gap: 12px;
     justify-content: space-between;
 }
 
-.btn.click-here{
-    padding: 16px 32px;
-    border-radius: 0.2px;
-    text-decoration: none;
+.app-section {
+    display: flex;
+}
+
+.btn-click-here h4 {
+    width: 147px;
+    height: 54px;
+    gap: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    padding-left: 10px;
     font-family: Urbanist;
-    font-style: semibold;
     font-weight: 600;
     font-size: 18px;
-    gap: 10px;
     background-color: #25A59E;
-    
+    color:#FFFFFF;
+    text-align: center;
 }
 
 
 /* Header */
 
-header{
+header {
     height: 323px;
     width: 375px;
     top: -3px;
 }
 
-nav{
+nav {
     display:  flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 375px;
-    height: 60px;
+    margin-bottom: 30px;
+    width: 100%;
     padding-top: 16px;
-    padding-right: 20px;
     padding-bottom: 16px;
-    padding-left: 20px;
     z-index: 100;
 }    
-        
 
-
-nav.logo{
+.nav-logo {
     font-family: Gilda display;
     font-weight: 400;
     font-size: 16px;
@@ -103,57 +99,253 @@ nav.logo{
     border: 0.7px;
 }
 
-nav img{
-    width: 24px;
-    height: 24px;
-    margin: 0;
+/*Travel-around*/
+
+section {
+    margin-top: 150px;
+    box-shadow: 5px 5px 5px #F2F2F2;
 }
 
-/*Travel around the world section*/
-
-.travel-around-the-world-section{
-    width: 375px;
-    height: 323px;
-    align-items: center;
-    padding-right: 24px;
-    padding-left: 24px;
-    top: 150px;
-    display: flex;
-}
-
-.travel-around-the-world h1{
+h1{
     font-family: Gilda display; 
     font-weight: 400;
     font-size: 52px;
     color: #262626;
     margin: 0;
-    align-items: center;
-    width: 327px;
-    height: 122px;
+    text-align: center;
+}
+
+.Travel-green {
+    color: #25A59E
+}
+
+.shapes {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.asian {
+    position: absolute;
+    z-index: 10;
+}
+
+.ellipse {
+    position: absolute;
+    z-index: -1;
+    top: 32px;
+    left: 20px;
+}
+
+.blurry {
+    position: absolute;
+    z-index: -2;
+    top: -120px;
+}
+
+.shapes img {
     align-items: center;
 }
 
->.travel-around-the-world h1 Travel{
-    font-family: Gilda display; 
+/* Destination-section */
+
+.destination {
+    margin-top: 50px;
+    box-shadow: 5px 5px 5px #F2F2F2;
+    
+}
+
+.destination img {
+    margin-left: 15px;
+}
+
+
+.destination h2 {
+    font-family: Gilda Display;
     font-weight: 400;
-    font-size: 52px;
-    color: #25A59E;
-    margin: 0;
-    align-items: center;
-    width: 327px;
-    height: 122px;
+    font-size: 40px;
+    color: #262626;
+    padding-left: 5%;
+}
+
+.destination p {
+    font-family: Urbanist;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 0%;
+}
+
+.destination h3{
+    font-family: Urbanist;
+    font-weight: 600;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 18px;
+    padding-left: 0%;
+    text-align: left;
+}
+
+
+/* Choose-us-section */
+h2 {
+    font-family: Gilda Display;
+    font-weight: 400;
+    font-size: 40px;
+    padding-left: 100px;
+    margin-top: auto;
+}
+
+p {
+    font-family: Urbanist;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.Best-guide h3 {
+    font-family: Gilda Display;
+    font-weight: 400;
+    font-size: 28px;
+    padding-left: 0%;
     
 }
 
-.travel-around-the-world img{
-    width: 432.6px;
-    height: 228px;
-    padding-top: 24px;
-    padding-left: 16.8px;
-    background: #2C1D3C #EE8F39;
-    
+.Best-guide {
+    border-top: 5px solid #25A59E;
 }
 
-.travel-around-the-world img background{
+.Best-guide p {
+    font-family: Urbanist;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 0%; 
+    text-align: left;
+}
 
+h4 {
+    padding-left: 200px;
+}
+
+.Special-Tickets {
+    background-color: #25A59E;
+}
+
+.Special-Tickets h3 {
+    color: #FFFFFF;
+    padding-left: 15px;
+    font-family: Gilda Display;
+    font-weight: 400;
+    font-size: 28px;
+    padding-left: 0%;
+}
+
+.Special-Tickets p {
+    font-family: Urbanist;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;  
+    color: #FFFFFF;
+    padding-left: 0%;
+}
+
+.Special-Tickets h4 {
+    color: #FFFFFF;
+}
+
+.Special-Tickets img {
+    color: #FFFFFF;
+}
+
+.Ready-support h3 {
+    font-family: Gilda Display;
+    font-weight: 400;
+    font-size: 28px;
+    padding-left: 0%;
+}
+
+.Ready-support {
+    border-top: 5px solid #25A59E;
+}
+
+.Ready-support p {
+    font-family: Urbanist;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;   
+}
+
+.Memorable h2 {
+    font-family: Gilda Display;
+    font-weight: 400;
+    font-size: 40px;
+    padding-left: 0%;
+}
+
+.Memorable p {
+    font-family: Urbanist;
+    font-weight: 500;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+.Memorable-shapes {
+    position: relative;
+    margin-bottom: 330px;
+}
+
+.couple {
+    position: absolute;
+    height: 247px;
+}
+
+.prism {
+    position: absolute;
+    top: 125px;
+    z-index: -200;
+    left: 29px
+}
+
+.Trip-documentation h2 {
+    font-family: Gilda Display;
+    font-weight: 400;
+    font-size: 40px;
+    text-align:  center;
+}
+
+
+.Trip-documentation img {
+    margin-bottom: 5px;
+}
+
+.Best-offer h2 {
+    font-family: Gilda Display;
+    font-weight: 400;
+    text-align: center;
+    font-size: 40px;
+}
+
+.travel h4 {
+    font-family: Gilda Display;
+    font-weight: 400;
+    padding-left: 0%;
+    font-size: 16px;
+}
+
+.footer-wrapper{
+    display: flex;
+    gap: 15px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+    font-family: Urbanist;
+    font-weight: 600;
+    font-size: 16px;
 }
