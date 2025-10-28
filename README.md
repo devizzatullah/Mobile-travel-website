@@ -1,4 +1,4 @@
-# Mobile-travel-website
+# desktop-travel-website
 A clean, responsive, and minimal static mobile travel website built with HTML semantics and CSS styling. This project serves as a groundlaying template for personal travel blogs, agency landing pages or destination showcase websites, designed to be easy to customize and deploy.
 
 ## Assets: 
